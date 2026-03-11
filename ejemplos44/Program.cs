@@ -6,7 +6,7 @@
         string nombre;
         int op;
         Console.WriteLine(" 1 admin");
-        Console.WriteLine(" 1 estudiante");
+        Console.WriteLine(" 2 estudiante");
         op=int.Parse(Console.ReadLine());
         switch (op)
         {
@@ -20,23 +20,28 @@
                     if (pasw == "123")
                     {
                         Console.WriteLine("Acceso corecto");
+
+
+
+                        Console.WriteLine(" 1 nota");
+                        Console.WriteLine(" 2 lista de estudiante");
+                        op = int.Parse(Console.ReadLine());
+                        switch (op)
+                        {
+
+                        }
                     }
+
                     else
                     {
+
                         Console.WriteLine(" contraseña incorecta");
                     }
                 }
 
                 else
                 {
-                    Console.WriteLine("contraseña incorecta");
-                }
-                Console.WriteLine(" 1 nota");
-                Console.WriteLine(" 2 lista de estudiante");
-                op= int.Parse(Console.ReadLine());
-                switch (op)
-                {
-
+                    Console.WriteLine("usuario incorecta");
                 }
 
 
@@ -51,6 +56,14 @@
                     if (cont =="1234")
                     {
                         Console.WriteLine("Acceso corecto");
+
+                        Console.WriteLine(" 1 ver notas ");
+                        Console.WriteLine(" 2 salir");
+                        op = int.Parse(Console.ReadLine());
+                        switch (op)
+                        {
+
+                        }
                     }
                     else
                     {
@@ -61,13 +74,9 @@
                 {
                     Console.WriteLine("Usuario incorrecto");
                 }
-                Console.WriteLine(" 1 ver notas ");
-                Console.WriteLine(" 2 salir");
-                op = int.Parse(Console.ReadLine());
-                switch (op)
-                {
-
-                }
+                break;
+            default:
+                Console.WriteLine("opcion invalida");
                 break;
         }
     
