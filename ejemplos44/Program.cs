@@ -61,8 +61,13 @@
                 {
                     Console.WriteLine("Usuario incorrecto");
                 }
-       
+                Console.WriteLine(" 1 ver notas ");
+                Console.WriteLine(" 2 salir");
+                op = int.Parse(Console.ReadLine());
+                switch (op)
+                {
 
+                }
                 break;
         }
     
